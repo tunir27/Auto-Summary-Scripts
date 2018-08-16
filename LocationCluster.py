@@ -4,11 +4,11 @@ from sklearn.metrics import silhouette_score
 import csv
 from sklearn.datasets import load_iris
 import numpy as np
-import matplotlib.ticker as ticker
+#import matplotlib.ticker as ticker
 import pandas as pd
 import pickle
-from matplotlib import pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+#from matplotlib import pyplot as plt
+#from mpl_toolkits.mplot3d import Axes3D
 from sklearn.cluster import KMeans
 def ClusterFunc(data):
      f1=[]
@@ -52,7 +52,7 @@ def ClusterFunc(data):
      c_data=[]
      #writer.writerow(['Message','cluster_number'])
      for i in range(len(X)):
-         c_data.append([f5[i],(labels2[i]+1)])
+         c_data.append([f5[i],(labels2[i]+1),f1[i],f2[i],f4[i]])
      return c_data,tvalue,centroids
 ##     pl=['1','2','3','4','5','6','7','8','9','10']
 ##     fig = plt.figure()
